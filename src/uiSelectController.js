@@ -340,7 +340,8 @@ uis.controller('uiSelectCtrl',
     _resetSearchInput();
     ctrl.open = false;
 
-    $scope.$broadcast('uis:close', skipFocusser);
+// fix to keep keyboard from popping up issue-818
+//    $scope.$broadcast('uis:close', skipFocusser);
 
   };
 
